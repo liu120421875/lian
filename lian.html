@@ -12,8 +12,12 @@
       this.name=name;
       this.age=age;
     }
+    People.prototype.run=function(){
+      console.log(`${this.name}全力奔跑！`);
+    }
     var lilei=new People("lilei",15);
     console.log(lilei);
+    lilei.run();
   </script>
 </body>
 </html>
